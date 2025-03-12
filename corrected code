@@ -1,0 +1,16 @@
+def is_narc(n):"""here : this operator need to be used after defining function"""
+    """Check if a number is narc."""
+    num_str = str(n)   """need to use one = instaed of == operator"""
+    num_digits = len(num_str)
+    
+    sum_of_powers = sum(int(digit) ** num_digits for digit in num_str)   """we need to use ** for exponentional operator instead of ***"""
+    
+    return sum_of_powers = n
+
+def print_narcis_numbers(start end): """here : this operator need to be used after defining function"""
+    """Print all narc numbers in a given range."""
+    for num in range(start, end + 1):   """here """: need to be there"""
+        if is_narc(num):   """here function name is changed"""
+            print(num)
+
+print_narc_numbers(1000, 5000)
